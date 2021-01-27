@@ -1,2 +1,2 @@
 # Ada-programming-basics-
-This Repisotory contains small Ada-program which may help with understanding the langauge.
+This is a  small Ada-program which may help you  with understanding the langauge Ada.

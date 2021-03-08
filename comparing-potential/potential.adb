@@ -24,7 +24,7 @@ procedure Potential is
 	end PrintOutput;
 
 	--this function just compare two obj and returns the biggest one
-	-- if both are equal, just return the temporary Object
+	-- if both are equal, just return the temporary Object( with every memeber having 0.0 as value)
 	Function Compare (obj1 : Object; obj2 : Object ) return Object is
 			-- not possible tmp:object:= NULL 
 		tmp : Object :=  (Mass => 0.0, Gravity => 0.0,height => 0.0);
@@ -45,7 +45,7 @@ procedure Potential is
 
 	end Compare;
 
-	-- Puts the Array in a loop and send the Object to above function to Compare
+	-- Puts the Array in a loop and send the Object to above function (Compare )
 	-- tmp value is only changed if it encounter onother Object with more Energy
 	procedure MaxEnergy(arr :  in out BigArray) is
 		tmp : Object :=  (Mass => 0.0, Gravity => 0.0,height => 0.0);
